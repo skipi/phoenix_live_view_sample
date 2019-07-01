@@ -1,9 +1,9 @@
 FROM bitwalker/alpine-elixir-phoenix:1.9.0.1.9
 WORKDIR /app
 
-COPY mix.exs ./ 
+COPY mix.* ./ 
 
-RUN mix do deps.get
+RUN mix do deps.get, deps.compile, compile
 
 COPY . /app
 

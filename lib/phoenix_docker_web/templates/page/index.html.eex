@@ -1,3 +1,5 @@
 <%= live_render(@conn, PhoenixDockerWeb.ClockLive) %>
 <hr>
 <%= live_render(@conn, PhoenixDockerWeb.TestLive) %>
+<hr>
+<%= live_render(@conn, PhoenixDockerWeb.ProcessLive) %>
