@@ -18,7 +18,6 @@ defmodule PhoenixDockerWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    live "test", TestLive
   end
 
   # Other scopes may use custom stacks.

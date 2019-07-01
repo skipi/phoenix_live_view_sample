@@ -8,5 +8,9 @@ services:
       - "4000:4000"
     networks:
       - webnet
+    environment:
+      - USR
+      - GRP
+      
 networks:
   webnet: 

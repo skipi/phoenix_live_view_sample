@@ -1,2 +1,3 @@
-
-<%= link "Test", to: Routes.live_path(@conn, PhoenixDockerWeb.TestLive) %>
+<%= live_render(@conn, PhoenixDockerWeb.ClockLive) %>
+<hr>
+<%= live_render(@conn, PhoenixDockerWeb.TestLive) %>

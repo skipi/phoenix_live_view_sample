@@ -22,13 +22,11 @@ defmodule PhoenixDockerWeb.TestLive do
   end
 
   def handle_event("inc", _, socket) do
-    counter = socket.assigns.counter + 1
-    {:noreply, assign(socket, :counter, counter)}
+    {:noreply, update(socket, :counter, &(&1 + 1))}
   end
 
   def handle_event("dec", _, socket) do
-    counter = socket.assigns.counter - 1
-    {:noreply, assign(socket, :counter, counter)}
+    {:noreply, update(socket, :counter, &(&1 - 1))}
   end
 
   def handle_event("set_max", val, socket) do
