@@ -1,0 +1,2 @@
+
+<%= link "Test", to: Routes.live_path(@conn, PhoenixDockerWeb.TestLive) %>
